@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class JuegosSeparados {
+public class JuegosFunciones {
 
     public static void juego1(Scanner teclado, Random random) {
 

@@ -28,12 +28,12 @@ public class JuegoMenuSeparado {
                 switch (aQueJugar) {
                     case 1 -> { // pares o nones
 
-                        JuegosSeparados.juego1(teclado, random);
+                        JuegosFunciones.juego1(teclado, random);
 
                     }
                     case 2 -> { // piedra, papel o tijera
 
-                        JuegosSeparados.juego2(teclado, random);
+                        JuegosFunciones.juego2(teclado, random);
 
                     }
                     case 3 -> { // salir
