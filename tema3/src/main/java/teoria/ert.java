@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class exepciones {
+public class ert {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 

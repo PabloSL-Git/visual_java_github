@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class juegos_con_menus {
+public class juegos_con_menu {
     public static void main(String[] args) {
         try (Scanner teclado = new Scanner(System.in)) {
 
@@ -203,7 +203,7 @@ public class juegos_con_menus {
                         }
 
                     }
-                    case 3 -> { // tijera maquina
+                    case 3 -> { // Salida
                         System.out.println("a salido");
                         break; // break solo te saca del switch pero vale aqui
                     }
