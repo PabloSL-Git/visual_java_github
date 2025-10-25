@@ -1,4 +1,6 @@
 package ejercicios;
+import javax.swing.JOptionPane;
+
 
 public class AceitunasSeparadas {
     public static void main(String[] args) {
@@ -15,16 +17,16 @@ public class AceitunasSeparadas {
         // hojiblanca + 15 centimos gruesa
         // - 5 centimos fina
 
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
+        final double PRECIO_ACEITUNA_INICIAL = 1.23;
 
-        final double PICUAL_GRUESA = 1.43;
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
+        final double PRECIO_PICUAL_GRUESA = 0.20;
+        final double PRECIO_PICUAL_FINA = 0.30;
 
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
+        final double PRECIO_ALOREÑA_GRUESA = 0.15;
+        final double PRECIO_ALOREÑA_FINA = 0.30;
 
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
-        final double PRECIO_ACEITUNA_INICIAL_KILO = 1.23;
+        final double PRECIO_HOJIBLANCA_GRUESA = 0.15;
+        final double PRECIO_HOJIBLANCA_FINA= 0.05;
     }
 
 }
