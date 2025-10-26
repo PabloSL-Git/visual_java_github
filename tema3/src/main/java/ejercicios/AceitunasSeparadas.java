@@ -1,6 +1,6 @@
 package ejercicios;
-import javax.swing.JOptionPane;
 
+import javax.swing.JOptionPane;
 
 public class AceitunasSeparadas {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class AceitunasSeparadas {
         // aceituna gruesa o aceituna fina.
 
         // picual + 20 centimos gruesa
-        // 30 centimos fina
+        // - 30 centimos fina
 
         // aloreña - 15 centimos gruesa
         // - 30 centimos fina
@@ -17,16 +17,37 @@ public class AceitunasSeparadas {
         // hojiblanca + 15 centimos gruesa
         // - 5 centimos fina
 
-        final double PRECIO_ACEITUNA_INICIAL = 1.23;
+        String tipo = "";
+        String tamaño = "";
+        double kilos = 0;
+        double precio = 0;
+        String mensajeFinal = "";
 
-        final double PRECIO_PICUAL_GRUESA = 0.20;
-        final double PRECIO_PICUAL_FINA = 0.30;
+        do {
 
-        final double PRECIO_ALOREÑA_GRUESA = 0.15;
-        final double PRECIO_ALOREÑA_FINA = 0.30;
+            tipo = AceitunasFunciones.mostrarMenuTipo();
 
-        final double PRECIO_HOJIBLANCA_GRUESA = 0.15;
-        final double PRECIO_HOJIBLANCA_FINA= 0.05;
+            if (tipo.equalsIgnoreCase("salir")) {
+                break;
+            }
+
+            tamaño = AceitunasFunciones.mostrarMenuTamaño();
+
+            kilos = AceitunasFunciones.mostrarMenuKilos();
+
+            precio = AceitunasFunciones.mostrarMenuPrecio(tipo, tamaño, kilos);
+
+            mensajeFinal = """
+                    Tipo de aceituna %s
+                    Tamaño de aceituna %s
+                    kilos de aceitunas %.2f
+                    Precio final %.2f
+                    """.formatted(tipo, tamaño, kilos, precio);
+
+            JOptionPane.showMessageDialog(null, mensajeFinal);
+
+        } while (!tipo.equalsIgnoreCase("salir"));
+
     }
 
 }

@@ -1,45 +1,54 @@
 package ejercicios;
+
 import javax.swing.JOptionPane;
 
-
 public class AceitunasFunciones {
-    public static void mostrarMenu() {
+    public static String mostrarMenuTipo() {
 
-        String tamaño = null;
-        boolean valido = false;
+        String tipo = "";
+        boolean valido1 = false;
 
-
-
-        while (!valido) {  // Repite hasta que el usuario escriba algo correcto
+        while (!valido1) { // Repite hasta que el usuario escriba algo correcto
             String menu = """
                     Dame qué tamaño quieres:
                     - Picual
                     - Aloreña
                     - Hojiblanca
+                    - Salir
                     """;
 
-            tamaño = JOptionPane.showInputDialog(null, menu);
+            tipo = JOptionPane.showInputDialog(null, menu);
 
-             if (tamaño.equalsIgnoreCase("fina")) {
-                JOptionPane.showMessageDialog(null, "Has elegido masa fina");
-                valido = true;
-            } else if (tamaño.equalsIgnoreCase("gruesa")) {
-                JOptionPane.showMessageDialog(null, "Has elegido masa gruesa");
-                valido = true;
+            if (tipo.equalsIgnoreCase("Picual")) {
+                JOptionPane.showMessageDialog(null, "Has elegido tipo Picual");
+                valido1 = true;
+
+            } else if (tipo.equalsIgnoreCase("Aloreña")) {
+                JOptionPane.showMessageDialog(null, "Has elegido tipo Aloreña");
+                valido1 = true;
+
+            } else if (tipo.equalsIgnoreCase("Hojiblanca")) {
+                JOptionPane.showMessageDialog(null, "Has elegido tipo Hojiblanca");
+                valido1 = true;
+
+            } else if (tipo.equalsIgnoreCase("Salir")) {
+                JOptionPane.showMessageDialog(null, "Saliendo del programa");
+                valido1 = true;
+
             } else {
-                JOptionPane.showMessageDialog(null, "Opción no válida. Intenta de nuevo.");
+                JOptionPane.showMessageDialog(null, "Opción no válida, intenta de nuevo");
             }
         }
+
+        return tipo;
     }
 
-    public static void mostrarMenuTamaño() {
+    public static String mostrarMenuTamaño() {
 
-        String tamaño = null;
-        boolean valido = false;
+        String tamaño = "";
+        boolean valido2 = false;
 
-
-
-       while (!valido) {  // Repite hasta que el usuario escriba algo correcto
+        while (!valido2) { // Repite hasta que el usuario escriba algo correcto
             String menu = """
                     Dame qué tamaño quieres:
                     - Fina
@@ -48,16 +57,87 @@ public class AceitunasFunciones {
 
             tamaño = JOptionPane.showInputDialog(null, menu);
 
-             if (tamaño.equalsIgnoreCase("fina")) {
-                JOptionPane.showMessageDialog(null, "Has elegido masa fina");
-                valido = true;
+            if (tamaño.equalsIgnoreCase("fina")) {
+                JOptionPane.showMessageDialog(null, "Has elegido tamaño fina");
+                valido2 = true;
+
             } else if (tamaño.equalsIgnoreCase("gruesa")) {
-                JOptionPane.showMessageDialog(null, "Has elegido masa gruesa");
-                valido = true;
+                JOptionPane.showMessageDialog(null, "Has elegido tamaño gruesa");
+                valido2 = true;
+
             } else {
-                JOptionPane.showMessageDialog(null, "Opción no válida. Intenta de nuevo.");
+                JOptionPane.showMessageDialog(null, "Opción no válida, intenta de nuevo");
             }
         }
+
+        return tamaño;
+    }
+
+    public static Double mostrarMenuKilos() {
+
+        double kilos = 0;
+        boolean valido3 = false;
+        String kilosTxt = "";
+
+        while (!valido3) { // Repite hasta que el usuario escriba algo correcto
+            String menu = """
+                    Cuantos kilos quieres?
+                    """;
+
+            kilosTxt = JOptionPane.showInputDialog(null, menu);
+            kilos = Double.parseDouble(kilosTxt);
+
+            if (kilos == 0) {
+                JOptionPane.showMessageDialog(null, "Necesita mas de 0 kilos");
+
+            } else if (kilos < 0) {
+                JOptionPane.showMessageDialog(null, "No puede ser negativo");
+
+            } else {
+                JOptionPane.showMessageDialog(null, "Has elegido " + kilos + " kilos");
+                valido3 = true;
+            }
+        }
+
+        return kilos;
+    }
+
+    public static Double mostrarMenuPrecio(String tipo, String tamaño, double kilos) {
+
+        double precio = 0;
+
+        final double PRECIO_ACEITUNA_INICIAL = 1.23;
+
+        final double PRECIO_PICUAL_GRUESA = 0.20;
+        final double PRECIO_PICUAL_FINA = 0.30;
+
+        final double PRECIO_ALOREÑA_GRUESA = 0.15;
+        final double PRECIO_ALOREÑA_FINA = 0.30;
+
+        final double PRECIO_HOJIBLANCA_GRUESA = 0.15;
+        final double PRECIO_HOJIBLANCA_FINA = 0.05;
+
+        if (tipo.equalsIgnoreCase("picual") && tamaño.equalsIgnoreCase("gruesa")) {
+            precio = (PRECIO_ACEITUNA_INICIAL + PRECIO_PICUAL_GRUESA) * kilos;
+        }
+        if (tipo.equalsIgnoreCase("picual") && tamaño.equalsIgnoreCase("fina")) {
+            precio = (PRECIO_ACEITUNA_INICIAL - PRECIO_PICUAL_FINA) * kilos;
+        }
+        if (tipo.equalsIgnoreCase("aloreña") && tamaño.equalsIgnoreCase("gruesa")) {
+            precio = (PRECIO_ACEITUNA_INICIAL - PRECIO_ALOREÑA_GRUESA) * kilos;
+        }
+        if (tipo.equalsIgnoreCase("aloreña") && tamaño.equalsIgnoreCase("fina")) {
+            precio = (PRECIO_ACEITUNA_INICIAL - PRECIO_ALOREÑA_FINA) * kilos;
+        }
+        if (tipo.equalsIgnoreCase("hojiblanca") && tamaño.equalsIgnoreCase("gruesa")) {
+            precio = (PRECIO_ACEITUNA_INICIAL + PRECIO_HOJIBLANCA_GRUESA) * kilos;
+        }
+        if (tipo.equalsIgnoreCase("hojiblanca") && tamaño.equalsIgnoreCase("fina")) {
+            precio = (PRECIO_ACEITUNA_INICIAL - PRECIO_HOJIBLANCA_FINA) * kilos;
+        }
+
+        return precio;
+
     }
 
 }
