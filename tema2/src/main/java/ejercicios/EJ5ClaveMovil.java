@@ -2,7 +2,7 @@ package ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class EJ5_clave_movil {
+public class EJ5ClaveMovil {
     public static void main(String[] args) {
 
         // usando JOption solicita los cuatro pines de clave de un movil

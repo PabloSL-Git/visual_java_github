@@ -1,7 +1,7 @@
 package teoria;
 
 
-public class inferencia_a_tipo {
+public class InferenciaATipo {
 
     public static void main(String[] args) {
 

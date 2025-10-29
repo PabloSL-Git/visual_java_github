@@ -2,7 +2,7 @@ package tema_1_2;
 
 import javax.swing.JOptionPane;
 
-public class ejercicio_2_pedro {
+public class EjercicioPedro {
     public static void main(String[] args) {
         // Pedro Rafael Ortega Núñez
 

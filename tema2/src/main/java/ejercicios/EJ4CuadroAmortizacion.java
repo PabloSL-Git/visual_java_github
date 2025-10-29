@@ -2,7 +2,7 @@ package ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class EJ4_cuadro_amortizacion {
+public class EJ4CuadroAmortizacion {
     public static void main(String[] args) {
 
         // calcular el cuadro de amortizacion de la compra de una vivienda

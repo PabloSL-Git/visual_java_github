@@ -1,6 +1,6 @@
 package teoria;
 
-public class estructuras_programa {
+public class EstructurasPrograma {
 
     /*
      * comentaio multilinea

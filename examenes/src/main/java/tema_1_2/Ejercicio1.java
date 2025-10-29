@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //Pablo Santamaria Loredo
 
-public class ejercicio_1 {
+public class Ejercicio1 {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);

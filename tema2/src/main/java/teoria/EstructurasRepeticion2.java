@@ -2,7 +2,7 @@ package teoria;
 
 import java.util.Scanner;
 
-public class estructuras_repeticion_2 {
+public class EstructurasRepeticion2 {
     public static void main(String[] args) {
         // Cuenta atrás desde 100 a 0
         // y solo imprimimos los impares

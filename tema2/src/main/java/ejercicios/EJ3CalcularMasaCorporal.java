@@ -2,7 +2,7 @@ package ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class EJ3_calcular_masa_corporal {
+public class EJ3CalcularMasaCorporal {
     public static void main(String[] args) {
 
         // calcularindice masa corporal, introduzca datos en rango.

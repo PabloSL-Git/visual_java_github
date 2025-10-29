@@ -2,7 +2,7 @@ package ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class EJ1_tributar_hacienda {
+public class EJ1TributarHacienda {
 
     public static void main(String[] args) {
 

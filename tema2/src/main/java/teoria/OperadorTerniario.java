@@ -2,7 +2,7 @@ package teoria;
 
 import java.util.Scanner;
 
-public class operador_terniario {
+public class OperadorTerniario {
     public static void main(String[] args) {
 
  Scanner tec = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package teoria;
 
-public class boolean_practica {
+public class BooleanPractica {
 
     public static void main(String[] args) {
         

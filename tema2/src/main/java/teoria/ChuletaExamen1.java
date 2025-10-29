@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class chuleta_examen_1 {
+public class ChuletaExamen1 {
     public static void main(String[] args) {
 
         final int NUMERO_DE_HORAS_CADA_PROFESOR = 18;

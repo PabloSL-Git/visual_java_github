@@ -2,7 +2,7 @@ package teoria;
 
 import java.util.Scanner;
 
-public class estructuras_repeticion {
+public class EstructurasRepeticion {
     public static void main(String[] args) {
 
         // todas las estructuras tienen tres partes

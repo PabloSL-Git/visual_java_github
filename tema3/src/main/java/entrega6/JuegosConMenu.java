@@ -5,7 +5,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class juegos_con_menu {
+public class JuegosConMenu {
     public static void main(String[] args) {
         try (Scanner teclado = new Scanner(System.in)) {
 

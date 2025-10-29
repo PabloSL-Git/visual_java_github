@@ -3,7 +3,7 @@ package entrega4;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
-public class tarea3a {
+public class Tarea3A {
   public static void main(String[] args) {
 
     Scanner teclado = new Scanner(System.in);

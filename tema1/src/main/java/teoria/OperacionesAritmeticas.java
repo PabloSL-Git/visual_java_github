@@ -1,6 +1,6 @@
 package teoria;
 
-public class operaciones_aritmeticas {
+public class OperacionesAritmeticas {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 

@@ -2,7 +2,7 @@ package ejercicios;
 
 import javax.swing.JOptionPane;
 
-public class EJ2_calculadora {
+public class EJ2Calculadora {
     public static void main(String[] args) {
 
         // EJ2 calculadora

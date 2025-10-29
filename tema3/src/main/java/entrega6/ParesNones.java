@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class pares_nones {
+public class ParesNones {
     public static void main(String[] args) {
         // pares nones
         // 2 jugadores

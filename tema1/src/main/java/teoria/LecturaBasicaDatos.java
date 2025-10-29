@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 //lectura basica de datos de teclo
 
-public class lectura_basica_datos {
+public class LecturaBasicaDatos {
     public static void main(String[] args) {
 
         // lectura con la clase scanner

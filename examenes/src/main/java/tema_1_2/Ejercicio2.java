@@ -2,7 +2,7 @@ package tema_1_2;
 
 import javax.swing.JOptionPane;
 
-public class ejercicio_2 {
+public class Ejercicio2 {
     public static void main(String[] args) {
 
         // picual, aloreña y hojiblanca

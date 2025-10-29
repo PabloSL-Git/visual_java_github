@@ -2,7 +2,7 @@ package teoria;
 
 import java.util.Scanner;
 
-public class Estructura_seleccion {
+public class EstructuraSeleccion {
     public static void main(String[] args) {
 
         // leer un numero que represente el mes

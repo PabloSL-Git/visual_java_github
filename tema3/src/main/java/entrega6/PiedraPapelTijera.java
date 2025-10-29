@@ -3,7 +3,7 @@ package entrega6;
 import javax.swing.JOptionPane;
 import java.util.Random;
 
-public class piedra_papel_tijera {
+public class PiedraPapelTijera {
     public static void main(String[] args) {
         
         Random random = new Random();
