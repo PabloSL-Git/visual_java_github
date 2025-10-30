@@ -43,9 +43,9 @@ public class AceitunasFunciones {
         return tipo;
     }
 
-    public static String mostrarMenuTamaño() {
+    public static String mostrarMenuTamanio() {
 
-        String tamaño = "";
+        String tamanio = "";
         boolean valido2 = false;
 
         while (!valido2) { // Repite hasta que el usuario escriba algo correcto
@@ -55,13 +55,13 @@ public class AceitunasFunciones {
                     - Gruesa
                     """;
 
-            tamaño = JOptionPane.showInputDialog(null, menu);
+            tamanio = JOptionPane.showInputDialog(null, menu);
 
-            if (tamaño.equalsIgnoreCase("fina")) {
+            if (tamanio.equalsIgnoreCase("fina")) {
                 JOptionPane.showMessageDialog(null, "Has elegido tamaño fina");
                 valido2 = true;
 
-            } else if (tamaño.equalsIgnoreCase("gruesa")) {
+            } else if (tamanio.equalsIgnoreCase("gruesa")) {
                 JOptionPane.showMessageDialog(null, "Has elegido tamaño gruesa");
                 valido2 = true;
 
@@ -70,7 +70,7 @@ public class AceitunasFunciones {
             }
         }
 
-        return tamaño;
+        return tamanio;
     }
 
     public static Double mostrarMenuKilos() {

@@ -18,7 +18,7 @@ public class AceitunasSeparadas {
         // - 5 centimos fina
 
         String tipo = "";
-        String tamaño = "";
+        String tamanio = "";
         double kilos = 0;
         double precio = 0;
         String mensajeFinal = "";
@@ -31,18 +31,18 @@ public class AceitunasSeparadas {
                 break;
             }
 
-            tamaño = AceitunasFunciones.mostrarMenuTamaño();
+            tamanio = AceitunasFunciones.mostrarMenuTamanio();
 
             kilos = AceitunasFunciones.mostrarMenuKilos();
 
-            precio = AceitunasFunciones.mostrarMenuPrecio(tipo, tamaño, kilos);
+            precio = AceitunasFunciones.mostrarMenuPrecio(tipo, tamanio, kilos);
 
             mensajeFinal = """
                     Tipo de aceituna %s
                     Tamaño de aceituna %s
                     kilos de aceitunas %.2f
                     Precio final %.2f
-                    """.formatted(tipo, tamaño, kilos, precio);
+                    """.formatted(tipo, tamanio, kilos, precio);
 
             JOptionPane.showMessageDialog(null, mensajeFinal);
 
