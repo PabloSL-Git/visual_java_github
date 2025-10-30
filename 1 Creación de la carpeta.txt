@@ -1,0 +1,70 @@
+1. Creación de la carpeta que será mi repositorio
+Abro Visual Studio Code
+Abro la termina (Ctrl+Sifth+`)
+Me muevo hasta el escritorio para crear la carpeta
+ls                                                                            //para ver los archivos y carpetas de la ubicación actual 
+cd Escritorio                                                         //para moverme a la carpeta Escritorio
+mkdir ejemplo_github                                         //comando para crear una carpeta
+cd ejemplo_github                                              //accedo a la carpeta que va a ser mi repositorio
+
+2. Instalación y configuración de GIT:
+sudo apt-get install git                                       //para instalar Git
+git config --global user.email "correo"              //establezco mi correo para los commits y para luego Github (no tiene que ser el mismo)
+git config --global user.name "nombre"           //establezco mi nombre para que aparezca en los commits
+git config --global init.defaultBranch main     //para que la rama principal se llame main
+
+3. Inicializar carpeta como repositorio GIT:
+git init
+
+(EN CUALQUIER MOMENTO) Consultar estado del repositorio:
+git status
+
+4. Creación de archivos para mi repositorio:
+Abro mi repositorio en Visual Studio Code de esta forma:
+Explorer -> Open Folder -> Selecciono ubicación de mi repositorio -> Yes, I trust the authors
+Creo nuevos archivos de la extensión que quiera
+Ejemplo de creación del fichero gitignore:
+
+    Desde la terminal: touch .gitignore
+    Manualmente: Explorer -> New File
+    Abreviatura de teclado: Ctrl+N
+
+5. Pasar cambios a la "sala de espera" (Stage):
+git add nombre_archivos_involucrados
+Si hay muchos ficheros que has modificado y quieres pasarlos todos al Stage se usa el comando git add .
+
+6. Hacer commits:
+git commit -m "Descripcion de los cambios"
+
+7. Ver información de los commits:
+git log
+
+1. Realizo TODOS los pasos de la Guía paso a paso para la creación de un repositorio Git en local
+
+(EN CUALQUIER MOMENTO) Consultar estado del repositorio:
+git status
+
+2. Creo un repositorio nuevo en GitHubPrimero debo tener creada una cuenta en GitHub
+Copio la url del repositorio SOLO HASTA EL NOMBRE DEL REPOSITORIO
+Ejemplo: https://github.com/nombreusuario/ejemplo_github
+
+
+3. Conectamos nuestro repositorio Git con el de GitHub:
+git branch -M main                               //nombro la rama main por si no se hubiera guardado correctamente en la configuración inicial
+git remote add origin url_copiada      //creo la rama remota que vincula ambas. La voy a nombrar origin para referirme a él, y especifico la url de origin (el repositorio en la nube de GitHub con el que quiero vincular mi repositorio local)
+
+4. Hago push de los commits que tengo en local para que estén en GitHub:
+git push -u origin main                         //subo los commits a github (origin) a la rama especificada (main en este caso)
+Se abrirá una pestaña para continuar con la vinculación
+Aceptamos que se enlace con GitHub
+Si recargamos la página de nuestro repositorio GitHub aparecerán los commits
+
+5. Pasar cambios realizados en GitHub a mi repositorio local:
+Si hemos subido o cambiado cosas directamente en el repositorio de GitHub, o bien queremos recuperar el repositorio en un nuevo dispositivo, se utiliza el comando pull
+git pull
+
+Si por error he inicializado una carpeta como repositorio que no quería, hay que escribir un comando concreto.
+Para deshacer esa acción, se utiliza en ESA CARPETA AFECTADA el siguiente comando:
+rm -rf .git
+
+Una vez deshecho esto, me muevo a la carpeta correcta que quiero inicializar, y uso el comando git init
