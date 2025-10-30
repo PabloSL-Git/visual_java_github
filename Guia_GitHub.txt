@@ -68,3 +68,41 @@ Para deshacer esa acción, se utiliza en ESA CARPETA AFECTADA el siguiente coman
 rm -rf .git
 
 Una vez deshecho esto, me muevo a la carpeta correcta que quiero inicializar, y uso el comando git init
+
+-----------------------------------------------------------------------------
+
+Abrir tu proyecto o carpeta
+
+Abre la carpeta donde está tu archivo: Archivo → Abrir carpeta.
+
+VS Code detectará automáticamente que es un proyecto Git si ya tiene un repositorio. Si no:
+
+Ve a la barra lateral de control de versiones (icono con tres ramas)
+
+Haz clic en Initialize Repository (inicializar repositorio)
+
+
+Conectar con GitHub
+
+En la misma barra lateral de control de versiones, haz clic en Publish to GitHub (publicar en GitHub).
+
+Inicia sesión con tu cuenta de GitHub si te lo pide.
+
+Selecciona si quieres un repositorio público o privado.
+
+Ahora tu proyecto estará conectado a GitHub sin escribir comandos.
+
+
+Subir cambios
+
+Cada vez que agregues un archivo:
+
+Ve a la barra de control de versiones.
+
+Verás tus archivos nuevos o modificados.
+
+Marca los archivos que quieras subir (checkbox).
+
+Escribe un mensaje de commit en el recuadro: "Agrego archivo xyz"
+
+Haz clic en Commit and Push → VS Code subirá los archivos a GitHub.
