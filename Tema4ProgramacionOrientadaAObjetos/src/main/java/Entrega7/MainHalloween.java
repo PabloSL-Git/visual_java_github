@@ -1,4 +1,4 @@
-package Entrega6;
+package Entrega7;
 
 import javax.swing.JOptionPane;
 
