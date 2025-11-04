@@ -1,4 +1,4 @@
-package alboran;
+package EjemploProfesor;
 
 import javax.swing.JOptionPane;
 

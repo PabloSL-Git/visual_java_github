@@ -1,4 +1,4 @@
-package alboran;
+package EjemploProfesor;
 
 public class Mensajes {
 
