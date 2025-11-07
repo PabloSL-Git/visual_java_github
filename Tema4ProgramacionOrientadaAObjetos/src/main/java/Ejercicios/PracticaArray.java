@@ -13,6 +13,9 @@ public class PracticaArray {
          * Media aritmética de los números de un array
          * 
          * Contar números de veces que aparece un numero de un array
+         * 
+         * Funcion recibe array de char y devuelve en que posicion 
+         * se encuentra el char como parametro o -1 si no esta
          */
 
         int[] array1 = { 15, 6, 3, 7, 15, 8 };
@@ -21,7 +24,7 @@ public class PracticaArray {
 
         int suma = 0;
         for (int i = 0; i < array1.length; i++) {
-            suma = suma + array1[i];
+            suma += array1[i];
         }
         System.out.println("La suma de los elementos es: " + suma);
 
@@ -30,23 +33,45 @@ public class PracticaArray {
         double media = suma / array1.length;
         System.out.println("La media aritmética es: " + media);
 
-        // contar numeros
-
-        System.out.print("Introduce un número a buscar: ");
-        int numeroBuscado = tec.nextInt();
+        // contar numeros repetidos
 
         int contador = 0;
+
+        System.out.println("Que numero quieres buscar");
+        int buscador = tec.nextInt();
+
         for (int i = 0; i < array1.length; i++) {
-            if (array1[i] == numeroBuscado) {
-                contador = contador + 1;
+            if (array1[i] == buscador){
+                contador++;
+            }
+
+        }
+
+        System.out.println("Se repite = " + contador);
+
+        // posicion de array con letra
+
+        char[] array2 = { 'a', 'b', 'i', 'r', 'p', 'j' };
+
+        System.out.println("array 2 es " + array2.length + " letras de largo");
+
+        System.out.println("Que letra buscas");
+        String buscaString = tec.nextLine();
+        char busca = buscaString.charAt(0);
+
+
+        for (int e = 0; e < array1.length; e++) {
+            if (busca == array2[e]){
+                System.out.println("numero esta en posicion " + e);
+
+            } else {
+                e = -1;
+
+                System.out.println("numero esta en posicion " + e);
             }
         }
 
-        if (contador > 0) {
-            System.out.println("El número " + numeroBuscado + " aparece " + contador + " veces en el array.");
-        } else {
-            System.out.println("El número " + numeroBuscado + " no aparece en el array.");
-        }
+
 
         tec.close();
 
