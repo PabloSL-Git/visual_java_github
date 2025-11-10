@@ -28,48 +28,57 @@ public class PracticaArray2 {
          * Dos arrays son iguales si tienen mismo tamaño y los elemetos de la misma
          * posicion son iguales.
          * 
+         * 6. funcion que recibe un string. Lo transforma en array de char
+         * y devuelve si es palindromo
+         * 
          */
 
         // 1
 
-        int[] numeros = { 15, 6, 3, 7, 15, 8 };
+        int[] numerosArray = { 15, 6, 3, 7, 15, 8 };
         double[] decimales = { 2.5, 4.0, 6.5 };
-        String[] palabras1 = { "hola", "mundo", "java" };
-        String[] palabras2 = { "hola", "mundo", "java" };
+        String[] palabras1 = { "hola", "adios", "buenas" };
+        String[] palabras2 = { "hola", "adios", "buenas" };
+        int numero = 2;
+        int tamanio = 10;
 
         // 1. Valor máximo
-        int max = valorMaximo(numeros);
+        int max = valorMaximo(numerosArray);
         System.out.println("El valor máximo es: " + max);
 
         // 2. Valor mínimo
-        int min = valorMinimo(numeros);
+        int min = valorMinimo(numerosArray);
         System.out.println("El valor mínimo es: " + min);
 
         // 3. Multiplicar elementos de un array de double por un número
         System.out.println("Array original: " + Arrays.toString(decimales));
-        multiplicaArray(decimales, 2.0);
+        multiplicaArray(decimales, numero);
         System.out.println("Array multiplicado: " + Arrays.toString(decimales));
 
         // 4. Generar array de letras aleatorias
-        char[] letras = generaArrayLetras(10);
+        char[] letras = generaArrayLetras(tamanio);
         System.out.println("Array de letras generado: " + Arrays.toString(letras));
 
         // 5. Comparar dos arrays de String
         boolean iguales = arraysIguales(palabras1, palabras2);
+
         System.out.println("¿Los arrays son iguales? " + iguales);
+
+        // teoria
+        //for each
 
         tec.close();
     }
 
     // 1. Valor máximo
     public static int valorMaximo(int[] array) {
-        int max = array[0];
+        int max = array[0]; // asumimos que el primer valor es el mayor
         for (int i = 1; i < array.length; i++) {
-            if (array[i] > max) {
+            if (array[i] > max) { // si encontramos uno mayor, lo actualizamos
                 max = array[i];
             }
         }
-        return max;
+        return max; // devolvemos el mayor valor
     }
 
     // 2. Valor mínimo
@@ -91,10 +100,10 @@ public class PracticaArray2 {
     }
 
     // 4. Generar array de letras aleatorias entre 'a' y 'z'
-    public static char[] generaArrayLetras(int tamaño) {
+    public static char[] generaArrayLetras(int tamanio) {
         Random random = new Random();
-        char[] letras = new char[tamaño];
-        for (int i = 0; i < tamaño; i++) {
+        char[] letras = new char[tamanio];
+        for (int i = 0; i < tamanio; i++) {
             letras[i] = (char) ('a' + random.nextInt(26));
         }
         return letras;
@@ -102,15 +111,20 @@ public class PracticaArray2 {
 
     // 5. Comparar si dos arrays de String son iguales
     public static boolean arraysIguales(String[] array1, String[] array2) {
+        boolean iguales = false;
         if (array1.length != array2.length) {
-            return false;
-        }
-        for (int i = 0; i < array1.length; i++) {
-            if (!array1[i].equals(array2[i])) {
-                return false;
+            iguales = false;
+        } else {
+            for (int i = 0; i < array1.length; i++) {
+                if (!array1[i].equals(array2[i])) {
+                    iguales = false;
+                } else {
+                    iguales = true;
+                }
             }
         }
-        return true;
+
+        return iguales;
 
     }
 
