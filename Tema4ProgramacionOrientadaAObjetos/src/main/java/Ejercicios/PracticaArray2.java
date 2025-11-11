@@ -41,6 +41,7 @@ public class PracticaArray2 {
         String[] palabras2 = { "hola", "adios", "buenas" };
         int numero = 2;
         int tamanio = 10;
+        String palabra = "reconocer";
 
         // 1. Valor máximo
         int max = valorMaximo(numerosArray);
@@ -65,9 +66,14 @@ public class PracticaArray2 {
         System.out.println("¿Los arrays son iguales? " + iguales);
 
         // 6. Comprobar si una palabra es palíndromo
-        String palabra = "palabra";
-        char[] chars = esPalindromo(palabra);
-        System.out.println("Palabra pasada a Char[] = " + chars);
+
+        // Pasar string a char[]
+        char[] chars = palabra.toLowerCase().toCharArray();
+        System.out.println("Palabra pasada a Char[] = " + Arrays.toString(chars));
+
+        // Comprobar si es palíndromo
+        boolean resultado = esPalindromo(palabra);
+        System.out.println("¿La palabra \"" + palabra + "\" es palíndromo? " + resultado);
 
         // teoria
         // for each
@@ -133,17 +139,19 @@ public class PracticaArray2 {
 
     }
 
-
-    // 6. pasar un string a char[] y comprobar
-    public static char[] esPalindromo(String texto) {
+    public static boolean esPalindromo(String texto) {
         char[] chars = texto.toLowerCase().toCharArray();
         int inicio = 0;
-        int fin = chars.length;
+        int fin = chars.length - 1;
+
         while (inicio < fin) {
+            if (chars[inicio] != chars[fin]) {
+                return false; // Si hay una diferencia, no es palíndromo
+            }
             inicio++;
             fin--;
         }
-        return chars;
+        return true; // Si todas las comparaciones coinciden
     }
 
 }
