@@ -28,7 +28,7 @@ public class PracticaArray2 {
          * Dos arrays son iguales si tienen mismo tamaño y los elemetos de la misma
          * posicion son iguales.
          * 
-         * 6. funcion que recibe un string. Lo transforma en array de char
+         * 6. Funcion que recibe un string. Lo transforma en array de char
          * y devuelve si es palindromo
          * 
          */
@@ -66,8 +66,8 @@ public class PracticaArray2 {
 
         // 6. Comprobar si una palabra es palíndromo
         String palabra = "palabra";
-        boolean esPalindromo = esPalindromo(palabra);
-        System.out.println("¿La palabra '" + palabra + "' es palíndromo? " + esPalindromo);
+        char[] chars = esPalindromo(palabra);
+        System.out.println("Palabra pasada a Char[] = " + chars);
 
         // teoria
         // for each
@@ -133,19 +133,17 @@ public class PracticaArray2 {
 
     }
 
-    // 6. Comprobar si un String es palíndromo
-    public static boolean esPalindromo(String texto) {
+
+    // 6. pasar un string a char[] y comprobar
+    public static char[] esPalindromo(String texto) {
         char[] chars = texto.toLowerCase().toCharArray();
         int inicio = 0;
-        int fin = chars.length - 1;
+        int fin = chars.length;
         while (inicio < fin) {
-            if (chars[inicio] != chars[fin]) {
-                return false;
-            }
             inicio++;
             fin--;
         }
-        return true;
+        return chars;
     }
 
 }
