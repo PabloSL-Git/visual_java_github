@@ -64,8 +64,13 @@ public class PracticaArray2 {
 
         System.out.println("¿Los arrays son iguales? " + iguales);
 
+        // 6. Comprobar si una palabra es palíndromo
+        String palabra = "palabra";
+        boolean esPalindromo = esPalindromo(palabra);
+        System.out.println("¿La palabra '" + palabra + "' es palíndromo? " + esPalindromo);
+
         // teoria
-        //for each
+        // for each
 
         tec.close();
     }
@@ -126,6 +131,21 @@ public class PracticaArray2 {
 
         return iguales;
 
+    }
+
+    // 6. Comprobar si un String es palíndromo
+    public static boolean esPalindromo(String texto) {
+        char[] chars = texto.toLowerCase().toCharArray();
+        int inicio = 0;
+        int fin = chars.length - 1;
+        while (inicio < fin) {
+            if (chars[inicio] != chars[fin]) {
+                return false;
+            }
+            inicio++;
+            fin--;
+        }
+        return true;
     }
 
 }
