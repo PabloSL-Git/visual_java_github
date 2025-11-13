@@ -13,21 +13,21 @@ public class Main {
         do {
 
             try {
-                opcion = Funciones.pedirOpcion();
+                opcion = AceitunasFuncionesArray.pedirOpcion();
                 // Si continua mi programa por aquí significa
                 // que no hay excepción NumberFormat
                 switch (opcion) {
                     case 1 -> {
                         // Vender
                         // Pedir tipo
-                        tipoAceituna = Funciones.pedirTipoAceituna();
+                        tipoAceituna = AceitunasFuncionesArray.pedirTipoAceituna();
                         System.out.println("El tipo es: " + tipoAceituna);
                         // Pedir tamaño
                         // Devuelve un int indicando 1 gruesa y 2 fina
-                        tamanioAceituna = Funciones.pedirTamanioAceituna();
+                        tamanioAceituna = AceitunasFuncionesArray.pedirTamanioAceituna();
                         System.out.println("El tamaño es " + pasarTamanioAceituna(tamanioAceituna));
                         // Pedir kg
-                        kg = Funciones.pedirKg();
+                        kg = AceitunasFuncionesArray.pedirKg();
                         System.out.println("Los kg son " + kg);
                         // calcular
                     }
@@ -51,7 +51,7 @@ public class Main {
 
     public static String pasarTamanioAceituna(int numero){
         String tamanio;
-        tamanio = numero == 1?Funciones.GRUESA:Funciones.FINA;
+        tamanio = numero == 1?AceitunasFuncionesArray.GRUESA:AceitunasFuncionesArray.FINA;
         return tamanio;
     }
 }

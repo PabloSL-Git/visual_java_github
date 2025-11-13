@@ -30,7 +30,6 @@ public class PracticaArray2 {
          * 
          * 6. Funcion que recibe un string. Lo transforma en array de char
          * y devuelve si es palindromo
-         * 
          */
 
         // 1
@@ -73,7 +72,7 @@ public class PracticaArray2 {
 
         // Comprobar si es palíndromo
         boolean resultado = esPalindromo(palabra);
-        System.out.println("¿La palabra \"" + palabra + "\" es palíndromo? " + resultado);
+        System.out.println("¿La palabra " + palabra + " es palíndromo? " + resultado);
 
         // teoria
         // for each
