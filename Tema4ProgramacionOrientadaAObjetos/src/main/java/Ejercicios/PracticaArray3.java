@@ -9,34 +9,34 @@ public class PracticaArray3 {
         // 7. array 100 numeros aleatorios entre 1 y 30
         // * 8. Funcion que recibe aray del 7. que nos devolvera el array sin duplicados
 
-        int[] numeros = new int[100];
-        Random randomNumeros = new Random();
-        
+        int[] numerosCambiados = arrayNoRepetido();
 
-        for (int i = 0; i < numeros.length; i++) {
+        for (int i = 0; i < numerosCambiados.length; i++) {
 
-            numeros[i] = randomNumeros.nextInt(30) + 1;
-
-            System.out.println("EL numero " + (1 + i) + " es " + numeros[i]);
-
-        }
-
-        numeros = arrayNoRepetido(numeros);
-
-        for (int i = 0; i < numeros.length; i++) {
-
-            System.out.println("EL numero cambiado de " + (1 + i) + " es " + numeros[i]);
+            System.out.println("EL numero cambiado de " + (1 + i) + " es " + numerosCambiados[i]);
 
         }
     }
 
-    public static int[] arrayNoRepetido(int[] array) {
+    public static int[] arrayNoRepetido() {
+
+        int[] numeros = new int[100];
+        Random randomNumeros = new Random();
+        int[] numerosCambiados = new int[100];
+
+        for (int i = 0; i < numeros.length; i++) {
+            numeros[i] = randomNumeros.nextInt(1, 31);
+        }  
+
+        for (int j = 0; j < numerosCambiados.length; j++) {
+            numerosCambiados[j] = numeros[j];
+        }
+        // Cuando j es por ejemplo 4, have que numeroCambiado sea 4 y numero sea 4
+
         
 
 
-        
-
-    return numeros;
+        return numerosCambiados;
     }
 
 }
