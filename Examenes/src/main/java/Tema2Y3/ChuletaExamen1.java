@@ -1,4 +1,4 @@
-package Teoria;
+package Tema2Y3;
 
 import java.util.Scanner;
 
