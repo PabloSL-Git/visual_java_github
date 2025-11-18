@@ -22,7 +22,7 @@ public class PracticaArray4 {
 
         for (int i = 0; i < array1.length; i++) {
 
-            System.out.println("Dame el numero de la siguiente posicion " + i);
+            System.out.println("Dame el numero de la siguiente posicion " + (i));
             array1[i] = tec.nextInt();
 
             while (!valido) { // Repite hasta que el usuario escriba algo correcto
@@ -46,7 +46,7 @@ public class PracticaArray4 {
 
         }
 
-        for (int i = 0; i < array1.length - 1; i++) {
+        for (int i = 0; i < array1.length; i++) {
 
             if (array1[i] == 1) {
                 buscador1++;
@@ -74,7 +74,7 @@ public class PracticaArray4 {
 
         tec.close();
 
-        //problemas, no llega cuenta a 10 y no coge numeros uperior o inferior a 1 y 5
+        //problemas no coge numeros uperior o inferior a 1 y 5
 
     }
 
