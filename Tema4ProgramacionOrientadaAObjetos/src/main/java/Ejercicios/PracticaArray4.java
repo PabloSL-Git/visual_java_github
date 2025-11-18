@@ -27,45 +27,43 @@ public class PracticaArray4 {
 
             while (!valido) { // Repite hasta que el usuario escriba algo correcto
 
-            if (array1[i] < 1 || array1[i] > 5 ) {
-                JOptionPane.showMessageDialog(null, "Deve se entre 1 y 5");
+                if (array1[i] < 1 || array1[i] > 5) {
 
-            } else {
-                valido = true;
+                    System.out.println("Deve ser entre 1 y 5");
+                     array1[i] = tec.nextInt();
+
+                } else {
+                    valido = true;
+                }
+
             }
 
         }
 
-        }
-
-         for (int i = 0; i < array1.length; i++) {
+        for (int i = 0; i < array1.length; i++) {
 
             System.out.println("En array posicion " + i + " es " + array1[i]);
 
         }
 
-
         for (int i = 0; i < array1.length - 1; i++) {
-            
 
-                if (array1[i] == 1) {
-                    buscador1++;
-                }
-                if (array1[i] == 2) {
-                    buscador2++;
-                }
-                if (array1[i] == 3) {
-                    buscador3++;
-                }
-                if (array1[i] == 4) {
-                    buscador4++;
-                }
-                if (array1[i] == 5) {
-                    buscador5++;
-                }
-                
+            if (array1[i] == 1) {
+                buscador1++;
+            }
+            if (array1[i] == 2) {
+                buscador2++;
+            }
+            if (array1[i] == 3) {
+                buscador3++;
+            }
+            if (array1[i] == 4) {
+                buscador4++;
+            }
+            if (array1[i] == 5) {
+                buscador5++;
+            }
 
-            
         }
 
         System.out.println("Numero de 1: " + buscador1);
@@ -74,9 +72,9 @@ public class PracticaArray4 {
         System.out.println("Numero de 4: " + buscador4);
         System.out.println("Numero de 5: " + buscador5);
 
-        
-
         tec.close();
+
+        //problemas, no llega cuenta a 10 y no coge numeros uperior o inferior a 1 y 5
 
     }
 
