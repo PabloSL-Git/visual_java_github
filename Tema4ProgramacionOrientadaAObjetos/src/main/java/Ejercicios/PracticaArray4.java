@@ -18,9 +18,11 @@ public class PracticaArray4 {
         int buscador3 = 0;
         int buscador4 = 0;
         int buscador5 = 0;
-        boolean valido = false;
-
+        
         for (int i = 0; i < array1.length; i++) {
+
+            boolean valido = false;
+
 
             System.out.println("Dame el numero de la siguiente posicion " + (i));
             array1[i] = tec.nextInt();
@@ -30,7 +32,7 @@ public class PracticaArray4 {
                 if (array1[i] < 1 || array1[i] > 5) {
 
                     System.out.println("Deve ser entre 1 y 5");
-                     array1[i] = tec.nextInt();
+                    array1[i] = tec.nextInt();
 
                 } else {
                     valido = true;
@@ -74,7 +76,7 @@ public class PracticaArray4 {
 
         tec.close();
 
-        //problemas no coge numeros uperior o inferior a 1 y 5
+        // problemas no deberia coger numeros superior o inferior a 1 y 5
 
     }
 
