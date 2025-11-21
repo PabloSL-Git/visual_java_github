@@ -2,7 +2,7 @@ package EjemploProfesor;
 
 import javax.swing.JOptionPane;
 
-public class AceitunasFuncionesArray {
+public class Funciones {
 
     // Constantes de clase para el tipo
     public static final String ALORENA = "aloreña";
