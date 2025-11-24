@@ -1,4 +1,4 @@
-package ejemplo_profesor;
+package ejemplo_profesor2;
 /*
 Una clase es un molde para crear objetos
 Tiene atributos y métodos
