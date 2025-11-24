@@ -1,6 +1,5 @@
 package ejercicios;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -9,28 +8,30 @@ public class practicaArray5 {
     private static final Scanner tec = new Scanner(System.in);
 
     public static void main(String[] args) {
-        // funcion de copiar array que se le de y darle la vuelta
-
+        
         int[] array1 = GenerarArray();
 
-        int[] copia = new int[array1.length];
+        // Copiar array1 manualmente  <-- cambio
+        int[] copia = new int[array1.length];          // <-- cambio
+        for (int i = 0; i < array1.length; i++) {      // <-- cambio
+            copia[i] = array1[i];                      // <-- cambio
+        }
 
-        int[] copiaInvertida = InvertirArray(copia);
+        // Invertir la copia (ahora sí contiene datos) <-- cambio
+        int[] copiaInvertida = InvertirArray(copia);   // <-- cambio
 
         System.out.println("Array dado la vuelta es: " + Arrays.toString(copiaInvertida));
 
+        tec.close();
     }
 
-    public static int[] GenerarArray() { // funcion, se le pone int[] para devolver array
+    public static int[] GenerarArray() {
 
         int[] array1 = new int[5];
+        Random random = new Random();  // <-- cambio (antes se creaba dentro del for)
 
         for (int i = 0; i < array1.length; i++) {
-
-            Random random = new Random();
-
             array1[i] = random.nextInt(10);
-
         }
 
         System.out.println("Array 1 es: " + Arrays.toString(array1));
@@ -41,10 +42,12 @@ public class practicaArray5 {
 
         int[] copiaInvertida = new int[copia.length];
 
-        // parte que invierte
+        // parte que invierte  <-- cambio (estaba vacío)
+        for (int i = 0; i < copia.length; i++) {                 // <-- cambio
+            copiaInvertida[i] = copia[copia.length - 1 - i];     // <-- cambio
+        }
 
         return copiaInvertida;
-
     }
 
 }
