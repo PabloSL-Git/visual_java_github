@@ -1,0 +1,120 @@
+CHULETA JAVA — RÁPIDA Y ORDENADA
+
+Mostrar mensajes y pedir datos (JOptionPane)
+
+Pedir String:
+String texto = JOptionPane.showInputDialog("Mensaje:");
+
+Pedir entero:
+int n = Integer.parseInt(JOptionPane.showInputDialog("Introduce un entero:"));
+
+Pedir double:
+double n = Double.parseDouble(JOptionPane.showInputDialog("Introduce un decimal:"));
+
+Pedir float:
+float n = Float.parseFloat(JOptionPane.showInputDialog("Introduce un flotante:"));
+
+Pedir long:
+long n = Long.parseLong(JOptionPane.showInputDialog("Introduce un número largo:"));
+
+Pedir short:
+short n = Short.parseShort(JOptionPane.showInputDialog("Introduce un número corto:"));
+
+Pedir byte:
+byte n = Byte.parseByte(JOptionPane.showInputDialog("Introduce un número byte:"));
+
+Pedir boolean:
+boolean b = Boolean.parseBoolean(JOptionPane.showInputDialog("true o false:"));
+
+Pedir char:
+char c = JOptionPane.showInputDialog("Introduce un carácter:").charAt(0);
+
+Mostrar mensaje:
+JOptionPane.showMessageDialog(null, "Texto");
+
+String multilínea con formato
+
+String msg = """
+Mes %d
+Pago: %.2f €
+Deuda restante: %.2f €
+""".formatted(mes, pago, deuda);
+
+printf — Formatos
+
+%d → Entero
+%f → Decimal
+%s → String
+%c → Carácter
+%b → Booleano
+%n → Salto de línea
+%% → Símbolo %
+
+Ejemplos:
+System.out.printf("Nombre: %s\n", nombre);
+System.out.printf("Precio: %.2f €\n", precio);
+
+Scanner — evitar errores con nextLine
+
+Scanner teclado = new Scanner(System.in);
+
+double n1 = teclado.nextDouble();
+teclado.nextLine();
+
+double n2 = teclado.nextDouble();
+teclado.nextLine();
+
+Comparaciones y booleanos
+
+boolean iguales = a == b;
+System.out.println("¿Son iguales? " + iguales);
+
+Intercambiar variables (swap)
+
+var aux = a;
+a = b;
+b = aux;
+
+Valores mínimos y máximos
+
+System.out.println(Integer.MIN_VALUE);
+System.out.println(Integer.MAX_VALUE);
+System.out.println(Double.MIN_VALUE);
+System.out.println(Double.MAX_VALUE);
+
+Constantes
+
+final int HORAS_PROFESOR = 18;
+
+IF básico
+
+if (edad == 18) {
+JOptionPane.showMessageDialog(null, "Mensaje");
+}
+
+Operaciones básicas
+
+sum = a + b;
+res = a - b;
+mul = a * b;
+div = a / b;
+
+Convertir a String
+
+Convertir número a String:
+String s = String.valueOf(numero);
+
+Convertir char a String:
+String s = String.valueOf(caracter);
+
+Convertir boolean a String:
+String s = String.valueOf(bool);
+
+Convertir cualquier tipo a String (método universal):
+String s = "" + variable;
+
+Convertir int a String con formato:
+String s = String.format("%d", numero);
+
+Convertir double con 2 decimales:
+String s = String.format("%.2f", numero);
