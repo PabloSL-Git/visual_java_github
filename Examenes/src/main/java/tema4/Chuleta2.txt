@@ -1,0 +1,32 @@
+Crear métodos (funciones)
+
+Método que NO devuelve nada (void):
+public static void saludar() {
+System.out.println("Hola");
+}
+
+Método que recibe parámetros:
+public static void saludarNombre(String nombre) {
+System.out.println("Hola " + nombre);
+}
+
+Método que devuelve un int:
+public static int sumar(int a, int b) {
+return a + b;
+}
+
+Método que devuelve un double:
+public static double calcularIVA(double precio) {
+return precio * 0.21;
+}
+
+Método booleano:
+public static boolean esMayorEdad(int edad) {
+return edad >= 18;
+}
+
+Llamar a un método:
+saludar();
+saludarNombre("Ana");
+int r = sumar(5, 3);
+boolean mayor = esMayorEdad(20);
