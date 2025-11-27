@@ -95,3 +95,14 @@ Agregar un nextLine() extra para limpiar el buffer:
 int edad = sc.nextInt();
 sc.nextLine(); // limpiar el salto de línea pendiente
 String nombre = sc.nextLine(); // ahora sí funciona
+
+
+RuntimeException	Clase base de excepciones en tiempo de ejecución.
+NullPointerException	Se intenta usar un objeto que es null.
+ArrayIndexOutOfBoundsException	Índice inválido en un arreglo.
+StringIndexOutOfBoundsException	Índice inválido en una cadena.
+ArithmeticException	Error aritmético (ej: dividir entre cero).
+IllegalArgumentException	Argumento inválido en un método.
+NumberFormatException	Error al convertir texto a número.
+IllegalStateException	El objeto está en un estado no válido para la operación.
+ClassCastException	Conversión de tipos no permitida.

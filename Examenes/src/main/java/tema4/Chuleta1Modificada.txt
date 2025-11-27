@@ -118,3 +118,20 @@ String s = String.format("%d", numero);
 
 Convertir double con 2 decimales:
 String s = String.format("%.2f", numero);
+
+
+public static void moverCeros(int[] arr) {
+    int index = 0;
+
+    // Copiar los números que NO son cero al principio
+    for (int num : arr) {
+        if (num != 0) {
+            arr[index++] = num;
+        }
+    }
+
+    // Rellenar el resto con ceros
+    while (index < arr.length) {
+        arr[index++] = 0;
+    }
+}
