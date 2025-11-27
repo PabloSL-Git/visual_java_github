@@ -7,6 +7,8 @@ import javax.swing.JOptionPane;
 public class ChuletaExamen1 {
     public static void main(String[] args) {
 
+        Scanner teclado = new Scanner(System.in);
+
         final int NUMERO_DE_HORAS_CADA_PROFESOR = 18;
 
         int numeroEdad;
@@ -98,7 +100,7 @@ public class ChuletaExamen1 {
 
         // evitar errores
 
-        Scanner teclado = new Scanner(System.in);
+        
         double num1 = teclado.nextDouble();
         teclado.nextLine();
         double num2 = teclado.nextDouble();

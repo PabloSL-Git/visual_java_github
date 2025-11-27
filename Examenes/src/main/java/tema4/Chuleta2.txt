@@ -1,32 +1,97 @@
-Crear métodos (funciones)
+// ===============================
+// CHULETA DE MÉTODOS EN JAVA
+// ===============================
 
-Método que NO devuelve nada (void):
-public static void saludar() {
-System.out.println("Hola");
+// ---------- Estructura básica ----------
+/*
+modificador tipoRetorno nombreMetodo(parámetros) {
+    // código
+    return valor; // si tipoRetorno NO es void
+}
+*/
+
+// ---------- Métodos sin parámetros ----------
+void saludar() {
+    System.out.println("Hola!");
 }
 
-Método que recibe parámetros:
-public static void saludarNombre(String nombre) {
-System.out.println("Hola " + nombre);
+int obtenerNumero() {
+    return 5;
 }
 
-Método que devuelve un int:
-public static int sumar(int a, int b) {
-return a + b;
+// ---------- Métodos con parámetros ----------
+void imprimirSuma(int a, int b) {
+    System.out.println(a + b);
 }
 
-Método que devuelve un double:
-public static double calcularIVA(double precio) {
-return precio * 0.21;
+int sumar(int a, int b) {
+    return a + b;
 }
 
-Método booleano:
-public static boolean esMayorEdad(int edad) {
-return edad >= 18;
-}
-
-Llamar a un método:
+// ---------- Llamar métodos ----------
+/*
 saludar();
-saludarNombre("Ana");
-int r = sumar(5, 3);
-boolean mayor = esMayorEdad(20);
+int r = sumar(3, 4);
+imprimirSuma(10, 20);
+*/
+
+// ---------- Modificadores más usados ----------
+/*
+public    -> accesible desde cualquier clase
+private   -> solo dentro de la misma clase
+protected -> clases hijas o mismo paquete
+static    -> pertenece a la clase
+*/
+
+// ---------- Métodos estáticos ----------
+public static int multiplicar(int a, int b) {
+    return a * b;
+}
+/*
+int x = MiClase.multiplicar(2, 3);
+*/
+
+// ---------- Sobrecarga de métodos ----------
+int sumar(int a, int b, int c) {
+    return a + b + c;
+}
+
+// ---------- Métodos con arrays ----------
+int sumaArray(int[] nums) {
+    int total = 0;
+    for (int n : nums) total += n;
+    return total;
+}
+
+// ---------- return ----------
+void ejemplo(int x) {
+    if (x < 0) return; // termina antes
+    System.out.println("x es positivo");
+}
+
+
+
+
+// ---------- NOTA IMPORTANTE ----------
+/*
+Java pasa parámetros SIEMPRE por valor.
+En objetos se pasa la REFERENCIA por valor.
+*/
+
+Problema común: nextLine() después de nextInt()
+
+Muy importante: después de usar nextInt(), nextDouble(), etc., queda un salto de línea (\n) pendiente.
+Esto hace que nextLine() parezca “saltarse” la entrada del usuario.
+
+Ejemplo del error:
+
+int edad = sc.nextInt();
+String nombre = sc.nextLine(); // <-- se salta esta lectura
+
+✅ Solución:
+
+Agregar un nextLine() extra para limpiar el buffer:
+
+int edad = sc.nextInt();
+sc.nextLine(); // limpiar el salto de línea pendiente
+String nombre = sc.nextLine(); // ahora sí funciona

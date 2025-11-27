@@ -8,6 +8,8 @@ public class practicaArray5 {
     private static final Scanner tec = new Scanner(System.in);
 
     public static void main(String[] args) {
+
+        // invertir array
         
         int[] array1 = GenerarArray();
 

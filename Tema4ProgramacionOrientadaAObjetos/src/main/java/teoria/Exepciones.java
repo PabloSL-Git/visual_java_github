@@ -88,5 +88,9 @@ public class Exepciones {
 
         teclado.close();
 
+        // ArrayIndexOutOfBoundsException (cuando se intenta acceder
+        //  a un índice que no existe en el array) y InputMismatchException 
+        // (cuando la entrada del usuario no coincide con el tipo de dato esperado por el programa)
+
     }
 }
