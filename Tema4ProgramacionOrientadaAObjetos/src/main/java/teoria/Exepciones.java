@@ -94,7 +94,7 @@ public class Exepciones {
 
         //numberformat algo no numero
 
-        //ilegalargumrnt 
+        //ilegalargument 
 
     }
 }
