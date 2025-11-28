@@ -1,4 +1,4 @@
-package entrega8;
+package array;
 
 public class OrganizarBurbujas {
     public static void main(String[] args) {

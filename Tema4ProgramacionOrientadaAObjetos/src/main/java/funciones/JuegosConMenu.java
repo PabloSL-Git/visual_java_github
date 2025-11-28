@@ -1,4 +1,4 @@
-package entrega6;
+package funciones;
 
 import javax.swing.JOptionPane;
 import java.util.InputMismatchException;

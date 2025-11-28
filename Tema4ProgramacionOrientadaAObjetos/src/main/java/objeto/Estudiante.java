@@ -1,4 +1,4 @@
-package entrega9;
+package objeto;
 
 public class Estudiante {
 

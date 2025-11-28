@@ -1,10 +1,10 @@
-package teoria;
+package array;
 
 import java.util.Random;
 
 import java.util.Scanner;
 
-public class Array {
+public class ArrayTeoria {
 
     // Atributo de clase privado accesible por todos los métodos
     // de la clase Main

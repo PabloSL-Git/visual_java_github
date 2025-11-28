@@ -1,4 +1,4 @@
-package teoria;
+package funciones;
 
 public class CalculadoraFunciones {
 

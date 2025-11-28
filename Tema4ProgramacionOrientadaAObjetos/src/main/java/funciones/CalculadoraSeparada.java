@@ -1,4 +1,4 @@
-package teoria;
+package funciones;
 
 import java.util.Scanner;
 import java.util.InputMismatchException;

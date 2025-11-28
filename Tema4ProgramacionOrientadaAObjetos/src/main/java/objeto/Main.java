@@ -1,4 +1,4 @@
-package entrega9;
+package objeto;
 
 public class Main {
     public static void main(String[] args) {

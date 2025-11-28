@@ -1,4 +1,4 @@
-package entrega6;
+package funciones;
 
 import java.util.InputMismatchException;
 import java.util.Random;

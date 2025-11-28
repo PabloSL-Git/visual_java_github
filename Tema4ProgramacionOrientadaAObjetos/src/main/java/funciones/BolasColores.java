@@ -1,4 +1,4 @@
-package ejercicios;
+package funciones;
 
 import java.util.Random;
 import javax.swing.JOptionPane;

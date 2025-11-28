@@ -1,4 +1,4 @@
-package entrega7;
+package funciones;
 
 import javax.swing.JOptionPane;
 
