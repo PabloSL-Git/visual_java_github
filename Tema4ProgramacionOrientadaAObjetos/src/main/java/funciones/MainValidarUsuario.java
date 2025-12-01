@@ -19,7 +19,10 @@ public class MainValidarUsuario {
 
         valido = NoGuionesSeguidos(usuario);
 
-        JOptionPane.showMessageDialog(null, "Usuario es valido");
+        if (valido){
+            JOptionPane.showMessageDialog(null, "Usuario es valido");
+        }
+        
     }
 
     public static boolean NumeroCaracteres(String usuario) {
