@@ -5,7 +5,7 @@ import java.util.Random;
 
 import javax.swing.JOptionPane;
 
-public class JuegoHalloween {
+public class HalloweenFunciones {
     public static String mostrarEntar(int entradaNum) { // inicio
 
         String entrar = "";
@@ -118,7 +118,7 @@ public class JuegoHalloween {
 
             case 2 -> { // juego
 
-                escape = JuegoHalloween.juegoMortal();
+                escape = HalloweenFunciones.juegoMortal();
             }
 
         }
@@ -142,7 +142,7 @@ public class JuegoHalloween {
             }
 
             case 2 -> { // juego
-                escape = JuegoHalloween.juegoMortal();
+                escape = HalloweenFunciones.juegoMortal();
             }
 
         }
@@ -166,7 +166,7 @@ public class JuegoHalloween {
             }
 
             case 2 -> { // juego
-                escape = JuegoHalloween.juegoMortal();
+                escape = HalloweenFunciones.juegoMortal();
             }
 
         }
@@ -190,7 +190,7 @@ public class JuegoHalloween {
             }
 
             case 2 -> { // juego
-                escape = JuegoHalloween.juegoMortal();
+                escape = HalloweenFunciones.juegoMortal();
             }
 
         }

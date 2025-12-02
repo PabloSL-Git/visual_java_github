@@ -1,4 +1,4 @@
-package funciones;
+package excepcion;
 
 import java.util.Random;
 import javax.swing.JOptionPane;

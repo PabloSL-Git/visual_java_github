@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 import java.util.Random;
 
-public class MainHalloween {
+public class HalloweenMain {
     public static void main(String[] args) {
 
         String entrar = "";
@@ -20,7 +20,7 @@ public class MainHalloween {
             // 1 puerta
             // 2 ventana
 
-            entrar = JuegoHalloween.mostrarEntar(entradaNum);
+            entrar = HalloweenFunciones.mostrarEntar(entradaNum);
 
             if (entrar.equalsIgnoreCase("no")) {
                 break;
@@ -29,23 +29,23 @@ public class MainHalloween {
             switch (entradaNum) {
                 case 1 -> { // puerta
 
-                    entrarPuerta = JuegoHalloween.mostrarPuerta();
+                    entrarPuerta = HalloweenFunciones.mostrarPuerta();
 
                     if (entrarPuerta.equalsIgnoreCase("biblioteca")) {
-                        escape = JuegoHalloween.mostrarPuertaBiblioteca();
+                        escape = HalloweenFunciones.mostrarPuertaBiblioteca();
                     } else {
-                        escape = JuegoHalloween.mostrarPuertaSalon();
+                        escape = HalloweenFunciones.mostrarPuertaSalon();
                     }
                 }
 
                 case 2 -> { // ventana
 
-                    entrarVentana = JuegoHalloween.mostrarVentana();
+                    entrarVentana = HalloweenFunciones.mostrarVentana();
 
                     if (entrarVentana.equalsIgnoreCase("despensa")) {
-                        escape = JuegoHalloween.mostrarVentanaDespensa();
+                        escape = HalloweenFunciones.mostrarVentanaDespensa();
                     } else {
-                        escape = JuegoHalloween.mostrarVentanaPasillo();
+                        escape = HalloweenFunciones.mostrarVentanaPasillo();
                     }
 
                 }

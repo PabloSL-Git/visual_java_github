@@ -3,7 +3,7 @@ package funciones;
 import javax.swing.JOptionPane;
 import java.util.Random;
 
-public class PiedraPapelTijera {
+public class JuegoPiedraPapelTijera {
     public static void main(String[] args) {
         
         Random random = new Random();
