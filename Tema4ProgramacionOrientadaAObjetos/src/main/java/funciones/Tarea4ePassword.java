@@ -14,9 +14,9 @@ public class Tarea4ePassword {
 
         do {
 
-            System.out.println("ontraseña de telefono es: " + contraTelefono());
+            System.out.println("Contraseña de telefono es: " + contraTelefono());
 
-            System.out.println("Contraseña de telefono es: " + contraUsuario());
+            System.out.println("Contraseña de usuario es: " + contraUsuario());
 
             System.out.println("La tercera opcion dara: " + new String(reandomArray()));
 
