@@ -1,8 +1,8 @@
-package entrega5;
+package estructura_repeticion;
 
 import java.util.Scanner;
 
-public class C {
+public class Entrega5_C {
     public static void main(String[] args) {
 
         // C. Hacer un programa que lea una serie de números enteros,

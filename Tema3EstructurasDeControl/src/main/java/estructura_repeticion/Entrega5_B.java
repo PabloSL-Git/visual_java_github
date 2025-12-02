@@ -1,8 +1,8 @@
-package entrega5;
+package estructura_repeticion;
 
 import java.util.Scanner;
 
-public class B {
+public class Entrega5_B {
     public static void main(String[] args) {
 
         // B. Pirámide de números. Genera un pirámide de números como esta.

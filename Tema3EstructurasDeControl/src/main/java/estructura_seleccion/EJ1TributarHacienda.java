@@ -1,4 +1,4 @@
-package ejercicios;
+package estructura_seleccion;
 
 import javax.swing.JOptionPane;
 

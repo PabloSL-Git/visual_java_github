@@ -1,8 +1,8 @@
-package entrega5;
+package estructura_repeticion;
 
 import javax.swing.JOptionPane;
 
-public class A {
+public class Entrega5_A {
     public static void main(String[] args) {
 
         // A. Imprimir por pantalla las 10 tablas de multiplicar, del 1 al 10.

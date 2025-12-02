@@ -1,4 +1,4 @@
-package entrega4;
+package estructura_seleccion;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;

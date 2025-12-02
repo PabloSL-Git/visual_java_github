@@ -1,8 +1,8 @@
-package entrega5;
+package estructura_repeticion;
 
 import java.util.Scanner;
 
-public class D {
+public class Entrega5_D {
     public static void main(String[] args) {
 
         // D. Pedir un día, un mes y un año.

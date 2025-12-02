@@ -1,4 +1,4 @@
-package teoria;
+package ternario;
 
 import java.util.Scanner;
 

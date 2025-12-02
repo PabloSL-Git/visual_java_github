@@ -1,4 +1,4 @@
-package teoria;
+package estructura_repeticion;
 
 import java.util.Scanner;
 

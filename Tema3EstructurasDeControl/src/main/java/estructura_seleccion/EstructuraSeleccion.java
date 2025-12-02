@@ -1,4 +1,4 @@
-package teoria;
+package estructura_seleccion;
 
 import java.util.Scanner;
 
