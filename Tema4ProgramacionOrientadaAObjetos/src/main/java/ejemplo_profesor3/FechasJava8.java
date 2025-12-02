@@ -147,7 +147,7 @@ public class FechasJava8 {
         Month mes = hoy.getMonth();
         DayOfWeek dia = hoy.getDayOfWeek();
         System.out.println("MES TextStyle.FULL " + mes.getDisplayName(TextStyle.FULL, configSistema));
-        
+         
         // La clase DateTimeFormatter formatea fechas y horas
         // para poder ser impresas en gran cantidad de formas
         // Más info en la API de Java
