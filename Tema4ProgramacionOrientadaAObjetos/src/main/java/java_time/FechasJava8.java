@@ -53,7 +53,7 @@ public class FechasJava8 {
             System.out.println("Jose es más joven...o eso dice");
         }
         
-        // Método isBefore()
+        // Método isBefore()    
         
         /* EJEMPLO CON LA CLASE MONTHDAY */
         // Sólo guarda el día y el mes (no el año)
@@ -164,7 +164,7 @@ public class FechasJava8 {
         System.out.println("Fecha sin formato " + ya);
         System.out.println("Fecha con formato " + fechaString2);
 
-        // para evitar mencion error
+        // para evitar not used error
 
         System.out.println(dia);
         
